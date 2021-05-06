@@ -25,8 +25,3 @@ ln -s ${BASEDIR}/.gitconfig ~/.gitconfig
 # SWAY
 #------------------------------------------------
 ln -s ${BASEDIR}/sway/config ~/.config/sway/config
-
-#------------------------------------------------
-# WAYBAR
-#------------------------------------------------
-ln -s ${BASEDIR}/waybar/config ~/.config/waybar/config
