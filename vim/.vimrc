@@ -1,5 +1,8 @@
 let mapleader=","
 
+" restore cursor last position
+set viminfo='10,\"100,:20,%,n~/.viminfo
+
 set number
 
 syntax enable
@@ -111,6 +114,7 @@ Plug 'preservim/tagbar'
 Plug 'vim-syntastic/syntastic'
 Plug 'luochen1990/rainbow'
 Plug 'itchyny/lightline.vim'
+Plug 'elzr/vim-json'
 
 " RUST
 Plug 'rust-lang/rust.vim'
