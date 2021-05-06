@@ -6,8 +6,7 @@ export TERM=xterm-256color
 alias ll='ls -iahl --color=auto'
 alias ls='ls --color=auto'
 
-alias t="todo.sh"
-alias i="${HOME}/bin/inbox.sh"
+export TERMINAL=alacritty
 
 alias ssh="TERM=xterm-256color ssh"
 
@@ -16,13 +15,24 @@ alias mc='. /usr/lib/mc/mc-wrapper.sh'
 export VISUAL=vim
 export EDITOR=vim
 
+#-----------------------------------------
+# QT
+#-----------------------------------------
+export QT_QPA_PLATFORMTHEME=qt5ct
+export QT_WAYLAND_DISABLE_WINDOWDECORATION=1
+
+#-----------------------------------------
+# NNN
+#-----------------------------------------
+export NNN_FIFO="/tmp/nnn.fifo"
+
 if [ -f ~/.bashrc_local ]; then
     source ~/.bashrc_local
 fi
 
-#===============================================================================
+#--------------------------------------------------------------------------------
 # nnn
-#-------------------------------------------------------------------------------
+#--------------------------------------------------------------------------------
 
 function n ()
 {
@@ -51,3 +61,9 @@ function n ()
             rm -f "$NNN_TMPFILE" > /dev/null
     fi
 }
+
+#==============================================
+# JUMP
+#----------------------------------------------
+
+eval "$(jump shell)"
