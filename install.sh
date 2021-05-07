@@ -44,3 +44,11 @@ ln -s ${BASEDIR}/bin/${OPENVPN_STATUS_SCRIPT} ~/bin/${OPENVPN_STATUS_SCRIPT}
 OPENVPN_TOGGLE_SCRIPT=openvpn-waybar-toggle.sh
 rm -f ~/bin/${OPENVPN_TOGGLE_SCRIPT}
 ln -s ${BASEDIR}/bin/${OPENVPN_TOGGLE_SCRIPT} ~/bin/${OPENVPN_TOGGLE_SCRIPT}
+
+#================================================
+# TODO.TXT
+#------------------------------------------------
+TODAY_SCRIPT=~/bin/today.sh
+rm -f ${TODAY_SCRIPT}
+ln -s ${BASEDIR}/bin/today.sh ${TODAY_SCRIPT}
+chmod +x ${TODAY_SCRIPT}
