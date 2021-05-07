@@ -33,3 +33,14 @@ touch ~/.config/alacritty/theme.yml
 # SWAY
 #------------------------------------------------
 ln -s ${BASEDIR}/sway/config ~/.config/sway/config
+
+#================================================
+# WAYBAR
+#------------------------------------------------
+OPENVPN_STATUS_SCRIPT=openvpn-waybar-status.sh
+rm -f ~/bin/${OPENVPN_STATUS_SCRIPT}
+ln -s ${BASEDIR}/bin/${OPENVPN_STATUS_SCRIPT} ~/bin/${OPENVPN_STATUS_SCRIPT}
+
+OPENVPN_TOGGLE_SCRIPT=openvpn-waybar-toggle.sh
+rm -f ~/bin/${OPENVPN_TOGGLE_SCRIPT}
+ln -s ${BASEDIR}/bin/${OPENVPN_TOGGLE_SCRIPT} ~/bin/${OPENVPN_TOGGLE_SCRIPT}
