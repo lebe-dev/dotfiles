@@ -45,6 +45,13 @@ rm -f ${SWAY_CONFIG}
 ln -s ${BASEDIR}/sway/config ${SWAY_CONFIG}
 
 #================================================
+# MAKO
+#------------------------------------------------
+MAKO_CONFIG=~/.config/mako/config
+rm -f ${MAKO_CONFIG}
+ln -s ${BASEDIR}/mako/config ${MAKO_CONFIG}
+
+#================================================
 # WAYBAR
 #------------------------------------------------
 OPENVPN_STATUS_SCRIPT=openvpn-waybar-status.sh
