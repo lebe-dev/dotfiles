@@ -8,6 +8,14 @@
 BASEDIR=~/.dotfiles
 
 #================================================
+# .BASHRC
+#------------------------------------------------
+BASHRC_FILE=~/.bashrc
+rm -f ${BASHRC_FILE}
+ln -s ${BASEDIR}/.bashrc ${BASHRC_FILE}
+source ${BASHRC_FILE}
+
+#================================================
 # VIM
 #------------------------------------------------
 ln -s ${BASEDIR}/vim/.vimrc ~/.vimrc
@@ -32,7 +40,9 @@ touch ~/.config/alacritty/theme.yml
 #================================================
 # SWAY
 #------------------------------------------------
-ln -s ${BASEDIR}/sway/config ~/.config/sway/config
+SWAY_CONFIG=~/.config/sway/config
+rm -f ${SWAY_CONFIG}
+ln -s ${BASEDIR}/sway/config ${SWAY_CONFIG}
 
 #================================================
 # WAYBAR
