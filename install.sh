@@ -26,7 +26,7 @@ ln -s ${BASEDIR}/.gitconfig ~/.gitconfig
 #------------------------------------------------
 ALACRITTY_CONFIG_FILE=~/.config/alacritty/alacritty.yml
 rm -f ${ALACRITTY_CONFIG_FILE}
-ln -s ${BASEDIR}/.config/alacritty/alacritty.yml ${ALACRITTY_CONFIG_FILE}
+ln -s ${BASEDIR}/alacritty/alacritty.yml ${ALACRITTY_CONFIG_FILE}
 touch ~/.config/alacritty/theme.yml
 
 #================================================
