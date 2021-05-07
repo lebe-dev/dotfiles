@@ -1,0 +1,23 @@
+#background_opacity: 1
+
+selection:
+  save_to_clipboard: true
+
+font:
+  normal:
+    family: JetBrains Mono
+    style: Regular
+  
+  bold:
+    family: JetBrains Mono
+    style: Bold
+
+  offset:
+    x: 0
+    y: 0
+
+window:
+  dynamic_title: true
+
+import: 
+  - '~/.config/alacritty/theme.yml'
