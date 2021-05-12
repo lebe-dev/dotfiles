@@ -6,20 +6,12 @@ export TERM=xterm-256color
 alias ll='ls -iahl --color=auto'
 alias ls='ls --color=auto'
 
-export TERMINAL=alacritty
-
 alias ssh="TERM=xterm-256color ssh"
 
 alias mc='. /usr/lib/mc/mc-wrapper.sh'
 
 export VISUAL=vim
 export EDITOR=vim
-
-#-----------------------------------------
-# QT
-#-----------------------------------------
-export QT_QPA_PLATFORMTHEME=qt5ct
-export QT_WAYLAND_DISABLE_WINDOWDECORATION=1
 
 #-----------------------------------------
 # NNN
@@ -67,3 +59,5 @@ function n ()
 #----------------------------------------------
 
 eval "$(jump shell)"
+
+. "$HOME/.cargo/env"
