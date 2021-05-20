@@ -3,8 +3,6 @@ let mapleader=","
 " restore cursor last position
 set viminfo='10,\"100,:20,%,n~/.viminfo
 
-set number
-
 syntax enable
 
 " autocomplete for menu, i.e. :e REA<Tab> will suggest README.md
