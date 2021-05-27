@@ -13,6 +13,8 @@ alias mc='. /usr/lib/mc/mc-wrapper.sh'
 export VISUAL=vim
 export EDITOR=vim
 
+export PATH=${HOME}/bin:${PATH}
+
 #-----------------------------------------
 # NNN
 #-----------------------------------------
