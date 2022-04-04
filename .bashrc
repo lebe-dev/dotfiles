@@ -1,3 +1,5 @@
+PS1="[\u@\h \w]$ "
+
 export LC_CTYPE=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 export LC_TIME=C
@@ -26,10 +28,6 @@ export NNN_FIFO="/tmp/nnn.fifo"
 if [ -f ~/.bashrc_local ]; then
     source ~/.bashrc_local
 fi
-
-#--------------------------------------------------------------------------------
-# nnn
-#--------------------------------------------------------------------------------
 
 function n ()
 {
