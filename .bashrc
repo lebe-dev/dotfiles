@@ -1,5 +1,6 @@
 export LC_CTYPE=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
+export LC_TIME=C
 
 export TERM=xterm-256color
 
@@ -12,6 +13,8 @@ alias mc='. /usr/lib/mc/mc-wrapper.sh'
 
 export VISUAL=vim
 export EDITOR=vim
+
+export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
 
 export PATH=${HOME}/bin:${PATH}
 
@@ -60,3 +63,4 @@ function n ()
 # JUMP
 #----------------------------------------------
 eval "$(jump shell)"
+. "$HOME/.cargo/env"
