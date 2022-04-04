@@ -1,3 +1,5 @@
 [user]
 	name = Eugene Lebedev
 	email = duke.tougu@gmail.com
+[core]
+	autocrlf = input
